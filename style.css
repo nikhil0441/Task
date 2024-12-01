@@ -12,6 +12,8 @@ body {
 
 /* Navbar Styling */
 header {
+  position: fixed;
+  width: 100%;
   background-color: #f8f8f8;
 }
 
@@ -20,7 +22,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 15px;
-  background-color: #fff;
+  background-color: #f3efef;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 #navbars .icon {
@@ -77,7 +79,7 @@ header {
 }
 #navbars .button button {
   padding: 10px 20px;
-  background-color: white;
+  background-color: rgb(221, 219, 219);
   color: red;
   font-weight: bold;
   border-radius: 45px;
@@ -99,6 +101,7 @@ header {
 #product {
   background-color: white;
   padding: 20px 0;
+  background-color: #eee9e9;
 }
 #product ul {
   list-style: none;
@@ -118,6 +121,100 @@ header {
   border-radius: 5px;
 }
 
+#home .home_item {
+  width: 100%;
+  height: 100vh;
+}
+
+#Discover .features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+#Discover .features .feature_item1 {
+  grid-column: span 2;
+}
+#Discover .features .feature_item1 img {
+  width: 200px;
+  height: 100px;
+}
+
+#Downloads_links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  justify-items: center;
+  padding: 20px;
+}
+#Downloads_links .links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+#Downloads_links .links a {
+  color: black;
+  font-size: 1.2rem;
+  padding: 15px;
+  text-decoration: none;
+}
+#Downloads_links .links a:hover {
+  color: #007bff;
+}
+#Downloads_links .Downloads {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+#Downloads_links .Downloads a {
+  padding-right: 20px;
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+}
+#Downloads_links .Downloads a:hover {
+  text-decoration: underline;
+}
+#Downloads_links .Downloads img {
+  width: 200px;
+  height: auto;
+  margin: 10px;
+}
+
+#policy_item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+}
+#policy_item .box1 {
+  flex: 1 1 300px;
+  max-width: 500px;
+  min-height: 300px;
+  padding: 15px;
+  box-sizing: border-box;
+}
+#policy_item .box1 a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+}
+#policy_item .box1 a:hover {
+  color: #007bff;
+}
+#policy_item .box1 span {
+  display: block;
+  color: black;
+  font-size: 0.9rem;
+  margin: 10px 0;
+}
+#policy_item .box1 p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin: 5px 0;
+}
+
+/* footer coding ends */
 /* Responsive Design */
 @media (max-width: 768px) {
   #navbars {
