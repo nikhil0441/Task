@@ -126,17 +126,164 @@ header {
   height: 100vh;
 }
 
-#Discover .features {
+#Discover h1 {
+  padding-left: 70px;
+  padding-bottom: 20px;
+}
+
+.features {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
+  gap: 20px;
+  padding-left: 70px;
+  justify-content: center;
 }
-#Discover .features .feature_item1 {
+.features .feature_item1 {
   grid-column: span 2;
+  height: 400px;
+  background: url(/Media/havells\ India.jpeg) center/cover no-repeat;
 }
-#Discover .features .feature_item1 img {
-  width: 200px;
-  height: 100px;
+.features .feature_item2 {
+  height: 400px;
+  width: 400px;
+  background: url(/Media/havells\ India.jpeg) center/cover no-repeat;
+}
+.features .feature_item3,
+.features .feature_item4,
+.features .feature_item5 {
+  height: 200px;
+  width: 400px;
+}
+.features .feature_item3 {
+  background: url(/Media/download\ \(2\).jpeg) center/cover no-repeat;
+}
+.features .feature_item4 {
+  background: url(/Media/havells\ India.jpeg) center/cover no-repeat;
+}
+.features .feature_item5 {
+  background: url(/Media/download\ \(2\).jpeg) center/cover no-repeat;
+}
+.features .feature_item1,
+.features .feature_item2,
+.features .feature_item3,
+.features .feature_item4,
+.features .feature_item5 {
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease-in-out;
+}
+.features .feature_item1:hover,
+.features .feature_item2:hover,
+.features .feature_item3:hover,
+.features .feature_item4:hover,
+.features .feature_item5:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+#links h1 {
+  margin: 70px;
+  margin-bottom: 30px;
+}
+#links .feature_link ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: baseline;
+  padding-left: 70px;
+  list-style: none;
+}
+#links .feature_link ul li a {
+  text-decoration: none;
+  padding-right: 20px;
+  color: black;
+}
+
+.box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding-top: 20px;
+  padding-left: 70px;
+  justify-content: center;
+}
+.box .firstbox {
+  grid-row: span 2;
+  width: 800px;
+  height: 800px;
+  background-image: url("/Media/shutterstock_2314045915_gema_800_x_800_px_1.webp");
+  background-size: cover;
+  background-position: center;
+  border-radius: 30px;
+  overflow: hidden;
+  transition: transform 0.5s ease-in-out;
+  overflow: hidden;
+}
+.box .firstbox:hover {
+  transform: scale(0.95);
+}
+.box .firstbox h2 {
+  padding-top: 690px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  color: white;
+}
+.box .firstbox button {
+  margin-left: 20px;
+  padding: 15px;
+  border-radius: 25px;
+  background-color: red;
+  color: white;
+}
+.box .box1 {
+  width: 300px;
+  height: 390px;
+  background-color: aqua;
+  border-radius: 30px;
+  overflow: hidden;
+  transition: transform 0.5s ease-in-out;
+}
+.box .box1 h2 {
+  padding-top: 270px;
+  padding-left: 20px;
+  font-size: 20px;
+  padding-bottom: 20px;
+  color: white;
+}
+.box .box1 button {
+  margin-left: 20px;
+  padding: 15px;
+  border-radius: 25px;
+  background-color: red;
+  color: white;
+}
+.box .box1:hover {
+  transform: scale(0.95);
+}
+.box .boxitem1,
+.box .boxitem2,
+.box .boxitem3,
+.box .boxitem4 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: transform 0.5s ease;
+}
+.box .boxitem1:hover,
+.box .boxitem2:hover,
+.box .boxitem3:hover,
+.box .boxitem4:hover {
+  transform: scale(1.1);
+}
+.box .boxitem1 {
+  background-image: url("https://havells.com/media/catalog/product//8/0/800x800_ap400.jpg");
+}
+.box .boxitem2 {
+  background-image: url("https://havells.com/media/catalog/product//6/0/600x600_graciawp_v1.jpg");
+}
+.box .boxitem3 {
+  background-image: url("https://havells.com/media/catalog/product//6/0/600x600_magnatronwh_v3.jpg");
+}
+.box .boxitem4 {
+  background-image: url("https://havells.com/media/catalog/product//o/f/ofr_11_fin.jpg");
 }
 
 #Downloads_links {
@@ -215,21 +362,44 @@ header {
 }
 
 /* footer coding ends */
-/* Responsive Design */
-@media (max-width: 768px) {
-  #navbars {
-    flex-direction: column;
-    align-items: flex-start;
+@media (max-width: 1024px) {
+  .box {
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 30px;
   }
-  .searchBar input[type=text] {
+  .box .firstbox {
     width: 100%;
+    height: 500px;
   }
-  .links {
-    margin-right: 0;
-    margin-bottom: 10px;
+  .box .box1 {
+    width: 100%;
+    height: 300px;
   }
-  #product ul {
-    flex-direction: column;
-    align-items: center;
+  .box h2 {
+    padding-top: 200px;
+    font-size: 18px;
+  }
+}
+@media (max-width: 768px) {
+  .box {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding-left: 10px;
+  }
+  .box .firstbox {
+    width: 100%;
+    height: 400px;
+  }
+  .box .box1 {
+    width: 100%;
+    height: 250px;
+  }
+  .box h2 {
+    padding-top: 150px;
+    font-size: 16px;
+  }
+  .box button {
+    padding: 10px;
+    font-size: 14px;
   }
 }/*# sourceMappingURL=style.css.map */
