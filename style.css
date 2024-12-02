@@ -239,7 +239,6 @@ header {
   background-color: aqua;
   border-radius: 30px;
   overflow: hidden;
-  transition: transform 0.5s ease-in-out;
 }
 .box .box1 h2 {
   padding-top: 270px;
@@ -255,9 +254,6 @@ header {
   background-color: red;
   color: white;
 }
-.box .box1:hover {
-  transform: scale(0.95);
-}
 .box .boxitem1,
 .box .boxitem2,
 .box .boxitem3,
@@ -265,13 +261,6 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  transition: transform 0.5s ease;
-}
-.box .boxitem1:hover,
-.box .boxitem2:hover,
-.box .boxitem3:hover,
-.box .boxitem4:hover {
-  transform: scale(1.1);
 }
 .box .boxitem1 {
   background-image: url("https://havells.com/media/catalog/product//8/0/800x800_ap400.jpg");
